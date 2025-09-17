@@ -4,4 +4,4 @@ from .models import Vuelo,Aerolinea
 
 def vuelo_list(request):
     vuelos=Vuelo.objects.all()
-    return render(request, 'vuelo/vuelo_list.html',{'vuelos':vuelos})
+    return render(request, 'vuelos/vuelo_list.html',{'vuelos':vuelos})

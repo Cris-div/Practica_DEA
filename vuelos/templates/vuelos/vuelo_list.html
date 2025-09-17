@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Items</h1>
+  <ul>
+    {% for vuelo in vuelos %}
+      <li>{{ vuelo.codigo }} -- {{vuelo.origen}} --{{vuelo.destino}} </li>
+    {% empty %}
+      <li>No items available.</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

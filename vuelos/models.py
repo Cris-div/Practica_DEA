@@ -1,7 +1,7 @@
 from django.db import models
 
 class Vuelo(models.Model):
-    codigo=models.IntegerField()
+    codigo=models.CharField(max_length=100)
     origen=models.CharField(max_length=100)
     destino=models.CharField(max_length=100)
 
